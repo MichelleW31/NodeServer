@@ -1,7 +1,9 @@
+
+var taskArray = ["Take out trash", "Wash hair", "Apply for jobs", "Look up flights", "Look for apartments", "Plan birthday", "Go shopping"];
+
 var random = function(){
-  var array = ["I'm 26", "I'm 5'5", "I like zombie movies", "I love to travel", "My middle name is Mattie", "I have asthma", "I love being near water and nature"];
-  var number = Math.floor(Math.random() * (array.length));
-  var phrase = array[number];
+  var number = Math.floor(Math.random() * (taskArray.length));
+  var phrase = taskArray[number];
   return phrase;
 }
 
